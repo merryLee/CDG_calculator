@@ -6,13 +6,13 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		int num1, num2;
+		int num1, num2, intNum;
 		float result;
 		String op;
 		
 		Scanner s = new Scanner(System.in);
 
-		System.out.print("¿¬»ê½Ä: ");
+		System.out.print("ì—°ì‚°ì‹: ");
 		num1 = s.nextInt();
 		op = s.next();
 		num2 = s.nextInt();
@@ -33,8 +33,12 @@ public class Main {
 			result = 0;
 		}
 		
-		System.out.println("°á°ú: " + result);
+		System.out.println("ê²°ê³¼: " + result);
 
-
+		System.out.print("ì •ìˆ˜ì…ë ¥: ");
+		intNum = s.nextInt();
+		System.out.print("16ì§„ìˆ˜: ");
+		Calculator.hexadecimalNumber(intNum);
+		
 	}
 }
