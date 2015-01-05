@@ -12,12 +12,10 @@ public class Main {
 		
 		Scanner s = new Scanner(System.in);
 
-		System.out.print("첫번째숫자: ");
+		System.out.print("연산식: ");
 		num1 = s.nextInt();
-		System.out.print("두번째숫자: ");
-		num2 = s.nextInt();
-		System.out.print("연산: ");
 		op = s.next();
+		num2 = s.nextInt();
 
 		if (op.equals("+")) {
 			result = Calculator.add(num1, num2);
@@ -37,6 +35,6 @@ public class Main {
 		
 		System.out.println("결과: " + result);
 
-		
+
 	}
 }
